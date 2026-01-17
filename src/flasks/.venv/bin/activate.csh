@@ -9,7 +9,15 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+setenv VIRTUAL_ENV /home/zcbml13/McHacks13/src/flasks/.venv
+=======
 setenv VIRTUAL_ENV /home/noah/repos/McHacks13/src/flasks/.venv
+>>>>>>> refs/remotes/origin/backend_flask
+=======
+setenv VIRTUAL_ENV /home/noah/repos/McHacks13/src/flasks/.venv
+>>>>>>> refs/remotes/origin/backend_flask
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"

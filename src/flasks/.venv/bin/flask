@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+#!/home/zcbml13/McHacks13/src/flasks/.venv/bin/python
+import sys
+from flask.cli import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+=======
+=======
+>>>>>>> refs/remotes/origin/backend_flask
 #!/home/noah/repos/McHacks13/src/flasks/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
@@ -5,4 +16,8 @@ import sys
 from flask.cli import main
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/backend_flask
+=======
+>>>>>>> refs/remotes/origin/backend_flask
     sys.exit(main())

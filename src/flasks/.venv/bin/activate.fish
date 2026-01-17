@@ -33,7 +33,15 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+set -gx VIRTUAL_ENV /home/zcbml13/McHacks13/src/flasks/.venv
+=======
 set -gx VIRTUAL_ENV /home/noah/repos/McHacks13/src/flasks/.venv
+>>>>>>> refs/remotes/origin/backend_flask
+=======
+set -gx VIRTUAL_ENV /home/noah/repos/McHacks13/src/flasks/.venv
+>>>>>>> refs/remotes/origin/backend_flask
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

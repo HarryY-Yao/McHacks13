@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+#!/home/zcbml13/McHacks13/src/flasks/.venv/bin/python
+=======
 #!/home/noah/repos/McHacks13/src/flasks/.venv/bin/python3
+>>>>>>> refs/remotes/origin/backend_flask
+=======
+#!/home/noah/repos/McHacks13/src/flasks/.venv/bin/python3
+>>>>>>> refs/remotes/origin/backend_flask
 # -*- coding: utf-8 -*-
 import re
 import sys
