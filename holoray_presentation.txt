@@ -1,0 +1,34 @@
+Who is our project for?
+What problem are we solving?
+Is it a real problem?
+Are there other solutions to this problem which don't need our project?
+Why would someone take our solution?
+
+Presentation Notes
+I. Holoray and Products
+	A. If it isn't solving a problem what is the point?
+	B. Python and Pytorch
+	C. Medtech Company which started as a research company in the department of surgery. A lot of engineers. Our speaker is a software engineer.
+		1. Cardiac Surgery (heart transplants damn).
+		2. There is no effective method for teaching this sort of hands-on work.
+			a. How do you teach someone to separate fat from anatomical structures?
+			b. Rebuilt zoom, teams, etc. for healthcare providers.
+				i. Admin tools and annotations.
+				ii. This doesn't work for every healthcare provider.
+			c. Augmented reality headsets to allow medicine practitioners to leave hands-free. Even if they are clicking buttons in mid-air it is really distracting (imagine in a surgery!)
+				i. Remote collaboration.
+				ii. There are a number of expensive machines in a hospital.
+				iii. IOT hardware. Holopod. You need immediate access to information for doctors to give junior doctors advice.
+				iv. Gives you access to tests and samples next to the live view of the surgery or other operation.
+	D. Today's Challenge
+		1. 2d Annotations. These Annotations stay fixed in their position. We want these annotations to move with the anatomy of the person.
+		2. OpenCV in Python notebook is a recommendation.
+		3. Key Considerations:
+			a. Resistance to Drift
+			b. Jitter
+			c. Latency
+			d. Out-of-Frame scenarios.
+			e. Edge-case handling.
+			f. Occlusion (what if something disapears off screen).
+			g. Bonus: functional UI or WebRTC integration.
+		4. Encouraging Vibe-coding.
