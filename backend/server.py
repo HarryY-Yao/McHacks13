@@ -28,6 +28,11 @@ oauth.register(
 def test():
     return {"message": "API working"}
 
+@app.route("/api/user")
+def get_user():
+    return session.get("user", {})
+
+
 @app.route("/login")
 def login():
     return oauth.auth0.authorize_redirect(

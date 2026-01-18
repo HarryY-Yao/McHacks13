@@ -8,19 +8,16 @@ import { useEffect } from "react";
 
 function App() {
 
-  // 🔵 Test connection to Flask backend
-  useEffect(() => {
-    async function testAPI() {
-      try {
-        const res = await fetch("/api/test");
-        const data = await res.json();
-        console.log("API response:", data);
-      } catch (err) {
-        console.error("API test failed:", err);
-      }
-    }
-    testAPI();
-  }, []);
+	useEffect(() => {
+  		async function testAPI() {
+    		const res = await fetch("/api/test");
+    		console.log("API test:", await res.json());
+
+    		const userRes = await fetch("/api/user");
+    		console.log("User:", await userRes.json());
+  		}
+  		testAPI();
+	}, []);
 
   return (
     <div className="App min-h-screen w-full flex flex-col bg-white">
