@@ -54,7 +54,7 @@ def logout():
 
 @app.route("/")
 def home():
-    return render_template("App.jsx", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return {"user": session.get("user")}
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=env.get("PORT", 3000))
+        app.run(host="0.0.0.0", port=env.get("PORT", 3000))
