@@ -12,9 +12,12 @@ export default function Header() {
         accountability, and structured study sessions to turn intention into
         consistency and effort into results.
       </p>
-      <button className="bg-red-600 hover:bg-red-800 duration-200 ease-in-out text-white px-11 py-2.5 font-bold rounded-md text-xl">
-        Get Started
-      </button>
+	  <a 
+	  href = "http://127.0.0.1:3000/login"
+	  id="qsLoginBtn"
+	  className="bg-red-600 hover:bg-red-800 duration-200 ease-in-out text-white px-11 py-2.5 font-bold rounded-md text-xl">
+        	Get Started
+	  </a>
     </div>
   );
 }
