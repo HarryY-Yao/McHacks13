@@ -35,7 +35,7 @@ def login():
 def callback():
     token = oauth.auth0.authorize_access_token()
     session["user"] = token
-    return redirect("/")
+    return redirect("http://localhost:5173/")
 
 @app.route("/logout")
 def logout():
@@ -54,7 +54,7 @@ def logout():
 
 @app.route("/")
 def home():
-    return render_template("home.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return render_template("App.jsx", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=env.get("PORT", 3000))
