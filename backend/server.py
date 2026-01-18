@@ -24,6 +24,9 @@ oauth.register(
     },
     server_metadata_url=f'https://{env.get("AUTH0_DOMAIN")}/.well-known/openid-configuration'
 )
+@app.route("/api/test")
+def test():
+    return {"message": "API working"}
 
 @app.route("/login")
 def login():
@@ -35,7 +38,7 @@ def login():
 def callback():
     token = oauth.auth0.authorize_access_token()
     session["user"] = token
-    return redirect("http://localhost:5173/")
+    return redirect("http://localhost:5174/")
 
 @app.route("/logout")
 def logout():
@@ -54,7 +57,7 @@ def logout():
 
 @app.route("/")
 def home():
-    return {"user": session.get("user")}
+    return "Backend running"
 
 if __name__ == "__main__":
         app.run(host="0.0.0.0", port=env.get("PORT", 3000))
